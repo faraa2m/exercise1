@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10112" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="exercise1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYH-q0-FIv">
+                                <rect key="frame" x="37" y="406" width="110" height="30"/>
+                                <state key="normal" title="Hide Blue Goat"/>
+                                <connections>
+                                    <action selector="blueHide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AUx-XX-Lhl"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue-goat-md" translatesAutoresizingMaskIntoConstraints="NO" id="yFt-WO-4YJ">
+                                <rect key="frame" x="26" y="59" width="133" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red-goat-md" translatesAutoresizingMaskIntoConstraints="NO" id="ayW-YB-ZLG">
+                                <rect key="frame" x="197" y="59" width="141" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57R-4x-JaU">
+                                <rect key="frame" x="207" y="406" width="120" height="30"/>
+                                <state key="normal" title="Hide Red Goat"/>
+                                <connections>
+                                    <action selector="redHide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Kh-dt-pQn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="blueButton" destination="tYH-q0-FIv" id="cNd-Dl-uaz"/>
+                        <outlet property="blueGoat" destination="yFt-WO-4YJ" id="Xn3-7R-Yv0"/>
+                        <outlet property="redButton" destination="57R-4x-JaU" id="Ffg-lz-jkd"/>
+                        <outlet property="redGoat" destination="ayW-YB-ZLG" id="2aZ-Js-hZJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="337"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blue-goat-md" width="255" height="300"/>
+        <image name="red-goat-md" width="255" height="300"/>
+    </resources>
+</document>
